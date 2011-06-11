@@ -4,7 +4,7 @@
 [DotCloud(DC)](http://www.dotcloud.com/) has installed a Perl/PSGI/Nginx stack for Perl apps (they call them services) and a PostgreSQL(Pg) service which together allow rapid deployment of Rose::DBx::Object::Renderer (RDOR) web apps in the cloud. This article uses Danny’s tutorial examples for using [Rose::DBx::Object::Builder (RDOB)](https://github.com/dannyglue/Rose-DBx-Object-Renderer/wiki/Generate-database-tables-with-rose%3A%3Adbx%3A%3Aobject%3A%3Abuilder) and [Rose::DBx::Object::Renderer with CGI::Application](https://github.com/dannyglue/Rose-DBx-Object-Renderer/wiki/Integrating-with-CGI%3A%3AApplication).
 
 
-On DotCloud&squo;s tutorial page for Perl they note:
+On DotCloud's tutorial page for Perl they note:
     “The perl service can host any Perl web application compatible with the PSGI standard.”
 
 
