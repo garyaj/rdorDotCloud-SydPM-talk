@@ -100,7 +100,7 @@ i.e.
 
 #### Deploying the RDOR app.
 
-  1. As noted in DotCloud’s tutorial page for Perl, create a directory to build the app e.g. rdor.
+  1. As noted in [DotCloud’s tutorial page for Perl](http://docs.dotcloud.com/components/perl/), create a directory to build the app e.g. rdor.
   2. Only three files are essential: app.psgi, Makefile.PL and lib/Application.pm.
     1. app.psgi loads the Application.pm module and runs it under PSGI;
     2. Makefile.PL lists the dependencies of the app and DC runs cpanm to import all the dependencies to the stack prior to running the app;
