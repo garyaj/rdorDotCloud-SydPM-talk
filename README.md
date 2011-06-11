@@ -71,7 +71,19 @@ i.e.
 
     6. Modify the config line of the Builder app you created in the RDOB tutorial above to use the uri and port in the sql url above (i.e. `sql.nasi.dotcloud.com` and `3317`) (yours will be different of course):
 
-            my $builder = Rose::DBx::Object::Builder->new(config => {db => {type => 'Pg', name => 'application', host => 'sql.nasi.dotcloud.com', port => 3317, username => 'demo', password =>’password', tables_are_singular => 1}});
+            my $builder = Rose::DBx::Object::Builder->new(
+              config => {
+                db => {
+                  type => 'Pg',
+                  name => 'application', 
+                  host => 'sql.nasi.dotcloud.com',
+                  port => 3317,
+                  username => 'demo',
+                  password =>’password',
+                  tables_are_singular => 1,
+                }
+              }
+            );
 
     7. Run the app to create your schema on DotCloud:
       
