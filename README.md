@@ -49,7 +49,7 @@ i.e.
         
             dotcloud run nasi.sql createdb application
       
-    4. Give all rights on ‘demo’ to user ‘demo’:
+    4. Give all rights on database ‘application’ to user ‘demo’:
         
             dotcloud run nasi.sql -- psql -c \"GRANT ALL PRIVILEGES ON DATABASE application TO demo\"
       
@@ -63,13 +63,13 @@ i.e.
             namespace: nasi
             ports:
             name: sql
-              url: pgsql://root:password@sql.nasi.dotcloud.com:3317
+              url: pgsql://root:password@i<em>sql.nasi.dotcloud.com:3317</em>
             name: ssh
               url: ssh://postgres@sql.nasi.dotcloud.com:3108
             state: running
             type: postgresql
 
-    6. Modify the config line of the Builder app you created in step 2) above to use the uri and port in bold above (yours will be different of course):
+    6. Modify the config line of the Builder app you created in the RDOB tutorial above to use the uri and port in the sql url above (i.e. `sql.nasi.dotcloud.com` and `3317`) (yours will be different of course):
 
             my $builder = Rose::DBx::Object::Builder->new(config => {db => {type => 'Pg', name => 'application', host => 'sql.nasi.dotcloud.com', port => 3317, username => 'demo', password =>’password', tables_are_singular => 1}});
 
@@ -77,7 +77,7 @@ i.e.
       
             perl bld_appdb.pl
 
-    8. Check the ‘demo’ tables:
+    8. Check the ‘application’ tables:
 
             $ dotcloud run nasi.sql -- psql application
             # psql application
@@ -174,16 +174,16 @@ i.e.
         uwsgi: started
         Connection to rdor.nasi.dotcloud.com closed.
 
-  7. Use your browser to goto
+  7. Browse to your app:
 
         http://rdor.nasi.dotcloud.com
 
     If you get the default page of your app, you’ve succeeded!
-  8. However there’s all sorts of problems which can occur and they’re not always obvious. The error I keep making is switching the RDOR config line between local and DC. That will give you a 404 error. Another frequently occuring initial problem is a dependency missing. Have a look at the logs using:
+  8. **However** there’s all sorts of problems which can occur and they’re not always obvious. The error I keep making is switching the RDOR config line between local and DC. That will give you a 404 error. Another frequently occuring initial problem is a dependency missing. Have a look at the logs using:
 
         dotcloud logs nasi.sql
 
-    This command runs a ‘tail -F’ on the logs as well so you can monitor in realtime.
+    This command runs a ‘`tail -F`’ on the logs as well so you can monitor in realtime.
   9. Now it’s time to make your app look prettier with templates and styling. Just edit locally, check with perl -wc and plackup then push to DotCloud. Simple!
 
 #### Conclusion
