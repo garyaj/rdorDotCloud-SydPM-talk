@@ -129,11 +129,19 @@ i.e.
     Be aware that you will have to change the RDOR config line of Application.pm when switching between running locally with plackup or running on DotCloud:
     For (local) plackup:
 
-        type => 'Pg', name => 'application', username => 'demo', password => '',
+        type => 'Pg',
+        name => 'application',
+        username => 'demo',
+        password => '',
 
     For DotCloud deployment (as for RDOB above):
 
-        type => 'Pg', name => 'application', host => 'sql.nasi.dotcloud.com', port => 3317, username => 'demo', password =>’password',
+        type => 'Pg',
+        name => 'application',
+        host => 'sql.nasi.dotcloud.com',
+        port => 3317,
+        username => 'demo',
+        password =>’password',
 
     Put Application.pm in the rdor/lib directory.
   2. Create app.psgi:
@@ -154,7 +162,7 @@ i.e.
         $ plackup app.psgi
         HTTP::Server::PSGI: Accepting connections at http://0:5000/
 
-    If your typing/copying is good and all the required CPAN modules are on your local system you will be able see the default start page of the app in your browser at ‘http://0:5000’.
+    If your typing/copying is good and all the required CPAN modules are on your local system you will be able see the default start page of the app in your browser at ‘`http://0:5000`’.
   4. Create a Makefile.PL listing the high-level dependencies (DotCloud’s Perl stack includes all the standard Perl modules):
 
         use ExtUtils::MakeMaker;
