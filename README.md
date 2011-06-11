@@ -117,7 +117,7 @@ i.e.
     1. app.psgi loads the Application.pm module and runs it under PSGI;
     2. Makefile.PL lists the dependencies of the app and DC runs cpanm to import all the dependencies to the stack prior to running the app;
     3. Application.pm is main body of code used in the app.
-  1. I copied Danny’s RDOR+CGI::App tutorial code into the rdor directory but discovered, by trial and error that I needed to make one small change. I changed the line which read:
+  1. I copied Danny’s [RDOR+CGI::App](https://github.com/dannyglue/Rose-DBx-Object-Renderer/wiki/Integrating-with-CGI%3A%3AApplication) tutorial code into the rdor directory but discovered, by trial and error that I needed to make one small change. I changed the line which read:
 
         sub start : Start {
     
