@@ -1,5 +1,5 @@
 ---- config
-title: Vroom!
+title: RDOR_DotCloud-SydPM-talk
 indent: 5
 height: 24
 width: 70
@@ -83,31 +83,31 @@ What I'd like to talk about today
 + * AWS - Amazon
 +   * Linux VM
 +   * build your own stack - including Perl
-+>>firefox https://console.aws.amazon.com/ec2/home?region=us-east-1#s=Home
++   * https://console.aws.amazon.com/ec2/home?region=us-east-1#s=Home
 + * CloudFoundry - VMWare
 +   * Java, Ruby, Node.js
-+>>firefox http://cloudfoundry.com/
++   * http://cloudfoundry.com/
 + * Heroku
 +   * Ruby
-+>>firefox http://www.heroku.com/
++   * http://www.heroku.com/
 + * Openshift - RedHat
 +   * Ruby, PHP and Python 
-+>>firefox https://openshift.redhat.com/app/
++   * https://openshift.redhat.com/app/
 + * Azure - Microsoft
 +   * C#, Java, PHP, Ruby
-+>>firefox http://www.microsoft.com/windowsazure/
++   * http://www.microsoft.com/windowsazure/
 
 ----
 == And a couple of Perl PaaS providers
 + * Stackato - Activestate
 +   * adds Perl and Python to CloudFoundry 
 +   * recently acquired Phenona (+ 15yo(!) developer, Daniil Kulchenko)
-+>>firefox http://www.activestate.com/cloud http://www.activestate.com/press-releases/activestate-acquires-phenona-perl-cloud-company
++   * http://www.activestate.com/cloud http://www.activestate.com/press-releases/activestate-acquires-phenona-perl-cloud-company
 + * DotCloud
 +   * Perl, Python, Ruby etc. etc.
 +   * acquired DuoStack
 +   * hired Miyagawa to implement Perl stack
-+>>firefox http://www.dotcloud.com/
++   * http://www.dotcloud.com/
 
 ---- center
 == Questions?
