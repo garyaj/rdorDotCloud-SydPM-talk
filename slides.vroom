@@ -106,12 +106,19 @@ What I'd like to talk about today
 
 ---- center
 == Questions?
----- center
+----
 == Let's deploy a webapp on DotCloud
+
++* use RDOB to deploy a PostgreSQL database as a service on DotCloud
++* write an RDOR application to use CGI::Application
++* make the application runnable locally with plackup
++* write a Makefile.PL listing all the high-level dependencies
++* deploy the app to DotCloud
++* access the app with your browser
 ----
 == The End
 
 == Questions?
 
-== http://garyaj.github.com/rdorDotCloud-SydPM-talk/
+== http://github.com/garyaj/rdorDotCloud-SydPM-talk/
 
