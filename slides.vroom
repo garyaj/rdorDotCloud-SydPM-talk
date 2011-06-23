@@ -73,8 +73,13 @@ What I'd like to talk about today
 +* Monitoring
 +* Backups
 +* Scaling
++  * Minimal expense to launch and test a website
++  * Fast deployment of extra CPU, RAM and disk storage
++  * Only deploy resources as needed
 ----
 == Some PaaS providers
+
++ Most offer a free entry-level account.
 + * AWS - Amazon
 +   * Linux VM
 +   * build your own stack - including Perl
