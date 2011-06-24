@@ -113,6 +113,7 @@ What I'd like to talk about today
 == Questions?
 ----
 == Let's deploy a webapp on DotCloud
+== (Full details at https://github.com/garyaj/rdorDotCloud-SydPM-talk )
 
 +* use RDOB to deploy a PostgreSQL database as a service on DotCloud
 +* write an RDOR application to use CGI::Application
